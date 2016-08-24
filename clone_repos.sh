@@ -11,7 +11,7 @@ then
     rm projecturl.txt && rm repourl.txt
 fi
 curl -u ${1}  "http://gitlaburl/rest/api/1.0/projects/" | jq -r  '.values[].key'  > projectkey.txt
-curl -u ${1}  "http://gitlaburl/rest/api/1.0/projects/" | jq -r  '.values[].key'  > projectname.txt
+curl -u ${1}  "http://gitlaburl/rest/api/1.0/projects/" | jq -r  '.values[].name'  > projectname.txt
 url="http://gitlaburl/rest/api/1.0/projects"
 for projectkey in $(cat projectkey.txt)
  do
