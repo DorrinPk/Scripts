@@ -5,7 +5,7 @@
 # don't judge me ^_^
 # this is ran after my clonerepos.sh script
 
-jsonhead="curl -u "\""USER:PASS"\"" https://api.github.com/orgs/eltorocorp/repos -d "\'"{"\""name"\"":"\"""
+jsonhead="curl -u "\""USER:PASS"\"" https://api.github.com/orgs/REPONAME/repos -d "\'"{"\""name"\"":"\"""
 jsontail=""\"","\""private"\"":""\""true""\""}"\'""
 echo "#!/bin/bash" >> runcurls.sh
 echo '\n' >> runcurls.sh
