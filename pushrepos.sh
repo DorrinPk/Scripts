@@ -6,7 +6,7 @@ for repo in $(ls -d *);
  do
  cd /PATH/TO/REPOS/$repo && echo "I'm in "$repo
  git remote rename origin bitbucket
- git remote add origin https://github.com/eltorocorp/$repo.git
+ git remote add origin https://github.com/org/$repo.git
  git push origin master
 
 done
